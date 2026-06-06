@@ -1,0 +1,32 @@
+//Primitive
+
+//7 types of data : string, number, boolean, undefined, bigint, null, symbol
+
+const score = 100;
+const scoreValue = 100.5;
+
+const isLoggedIn = false;
+const outsideTemp = null;
+let userEmail;
+
+const id = Symbol("123");
+const anotherId = Symbol("123");
+
+console.log(id===anotherId); // it will give false because symbols are unique and even if they have the same description, they are not equal
+
+//But why did it use === because when we use the == operator, JavaScript will convert the symbols to strings before comparing them, so they will be equal because they have the same description, but when we use the === operator, JavaScript will not convert the symbols to strings and will compare them as they are, so they are not equal
+
+
+// Reference(Non primitive)
+
+// Array, Objects, Functions
+
+const heros = ["Batman", "Superman", "Flash"];
+let myObj = {
+    name:"Sambit",
+    age: 23,
+}
+
+const MyFunction = function(){
+    console.log("Hello World");
+}
