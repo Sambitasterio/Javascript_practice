@@ -30,3 +30,29 @@ let myObj = {
 const MyFunction = function(){
     console.log("Hello World");
 }
+
+
+//*******************************************************MEMORY ********************************************/
+
+//stack (Primitives) and heap (Reference)
+
+let myName = "Sambit";
+
+let anotherName = myName; // it will create a copy of the value of myName and assign it to anotherName, so they are stored in different memory locations in the stack
+
+anotherName = "Sam";
+
+console.log(myName);
+console.log(anotherName);
+
+
+let userOne = {
+    Name: "Sambit",
+    Age:23
+}
+let userTwo = userOne; // it will create a reference to the same object in the heap, so they are stored in the same memory location in the heap
+
+userTwo.Age  = 24;
+
+console.log(userOne);
+console.log(userTwo);
