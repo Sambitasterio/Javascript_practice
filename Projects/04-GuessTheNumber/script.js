@@ -60,7 +60,7 @@ function displayGuess(guess){
 }
 
 function displayMessage(message){
-    // was: LowerOrHi.innerHTML — wrong case, variable is lowerOrHi (lowercase l)
+    // was: LowerOrHi.innerHTML — wrong case, variable is lowerOrHi (lowercase l) not LowerOrHi
     lowerOrHi.innerHTML = `<h1>${message}</h1>`;
 }
 
